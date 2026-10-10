@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MathVerse | Department of Mathematics</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+:root{--purple:#6d28d9;--deep:#2e1065;--pink:#ec4899;--ink:#292344;--pale:#f5f3ff}
+body{font-family:Arial,sans-serif;background:var(--pale);color:var(--ink);line-height:1.75}
+header{background:linear-gradient(120deg,#4c1d95,#7c3aed,#ec4899);color:white;text-align:center;padding:48px 18px}
+header h1{font-size:clamp(32px,5vw,48px);margin-bottom:8px}
+header p{margin:3px}
+nav{background:var(--deep);padding:13px 10px;text-align:center;position:sticky;top:0;z-index:10;box-shadow:0 3px 12px #0002}
+nav a{display:inline-block;color:white;text-decoration:none;margin:5px 10px;font-weight:bold;font-size:14px}
+nav a:hover{color:#f9a8d4}
+.container{width:90%;max-width:1100px;margin:auto}
+section{padding:38px 0;scroll-margin-top:75px}
+h2{color:var(--purple);font-size:28px;line-height:1.3;margin-bottom:15px}
+h3{color:#5b21b6;margin:0 0 8px}
+p{margin:8px 0 12px}
+.hero{background:linear-gradient(135deg,#ede9fe,#fce7f3);border-radius:18px;padding:38px 24px;text-align:center;margin-top:25px}
+.button{display:inline-block;background:#7c3aed;color:white;padding:10px 20px;margin:10px 5px;border-radius:25px;text-decoration:none;border:0;cursor:pointer;font-size:15px}
+.button:hover{background:#db2777}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin:18px 0}
+.card{background:white;padding:22px;border-radius:15px;box-shadow:0 4px 15px #00000012;border-bottom:4px solid #8b5cf6;transition:transform .25s}
+.card:hover{transform:translateY(-4px)}
+.emoji{font-size:34px;margin-bottom:5px}
+.highlight{background:#fce7f3;padding:22px;border-radius:12px;margin:18px 0}
+.formula{background:#ede9fe;padding:13px;border-radius:10px;text-align:center;font-size:19px;font-weight:bold;margin:12px 0;color:#5b21b6;overflow-wrap:anywhere}
+.small-title{color:#7c3aed;font-size:20px;margin:24px 0 8px}
+ul{padding-left:24px;margin:8px 0 14px}
+li{margin:5px 0}
+table{width:100%;border-collapse:collapse;background:white;margin:15px 0;border-radius:10px;overflow:hidden}
+th,td{padding:12px;border:1px solid #ddd;text-align:left}
+th{background:#ede9fe;color:#4c1d95}
+.quiz{background:#e0f2fe;padding:25px;border-radius:15px;margin-top:15px}
+.question{background:white;border-radius:10px;padding:15px;margin:14px 0}
+.question label{display:block;margin:5px 0;cursor:pointer}
+#quizResult{font-weight:bold;margin-top:12px}
+footer{background:var(--deep);color:white;text-align:center;padding:25px;margin-top:30px}
+.note{font-size:14px;color:#625b7c}
+@media(max-width:600px){
+ nav a{margin:4px 6px;font-size:13px}
+ .hero{padding:28px 16px}
+ th,td{padding:8px;font-size:14px}
+}
+@media print{
+ nav,.button,.quiz button{display:none}
+ body{background:white}
+ .card,.hero,.highlight{break-inside:avoid;box-shadow:none}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>📐 MathVerse</h1>
+  <p><strong>Department of Mathematics</strong></p>
+  <p>Discover Patterns • Explore Numbers • Solve Problems</p>
+  <p>Learning mathematics through concepts, examples and real-life applications</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#branches">Branches</a>
+  <a href="#applications">Applications</a>
+  <a href="#formulas">Formulas</a>
+  <a href="#quiz">Quiz</a>
+  <a href="#future">Future Scope</a>
+  <a href="#conclusion">Conclusion</a>
+</nav>
+
+<main class="container">
+
+<!-- HOME -->
+<section id="home">
+  <div class="hero">
+    <h2>Welcome to the World of Mathematics!</h2>
+    <p>Mathematics is the study of numbers, quantities, shapes, patterns and logical relationships. It helps us understand the world, solve practical problems and develop logical thinking. From mobile phones to space exploration, mathematics plays an important role in modern life.</p>
+    <p>MathVerse is a student-friendly learning website that introduces important mathematical branches, formulas and applications. Its goal is to make mathematics easier to explore by connecting classroom concepts with everyday experiences.</p>
+    <a href="#about" class="button">Explore Mathematics</a>
+    <a href="#quiz" class="button">Try the Quiz</a>
+  </div>
+
+  <h2 style="margin-top:30px">🌟 Why Learn Mathematics?</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="emoji">🧠</div>
+      <h3>Logical Thinking</h3>
+      <p>Mathematics trains us to examine information, recognize patterns and build step-by-step solutions instead of guessing.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">🔍</div>
+      <h3>Problem Solving</h3>
+      <p>Equations and models help break a difficult problem into smaller parts that can be understood and solved.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">💡</div>
+      <h3>Innovation</h3>
+      <p>Mathematical ideas support new technologies, scientific discoveries, safer structures and more efficient systems.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">🌍</div>
+      <h3>Everyday Decisions</h3>
+      <p>We use mathematics to compare prices, plan time, measure ingredients, budget money and interpret information.</p>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <h3>Did You Know?</h3>
+    <p>Digital devices represent information using binary digits, 0 and 1. Algebra, logic, statistics and geometry all contribute to the software and hardware that make modern computing possible.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>🔢 What Is Mathematics?</h2>
+  <p>Mathematics is a fundamental field of study that uses numbers, symbols, formulas and logical reasoning to describe relationships and solve problems. It provides a precise language for expressing quantities, testing ideas and explaining patterns.</p>
+  <p>Mathematics is not only about calculating answers. It also involves asking questions, making assumptions, testing methods and explaining why a solution works. These habits are useful in education, science, engineering, economics and research.</p>
+
+  <div class="highlight">
+    <h3>Project Objective</h3>
+    <p>The objective of this project is to introduce the major branches of mathematics, explain useful mathematical formulas and demonstrate their applications in daily life and technology. The website organizes information in a clear format so that students can revise important concepts easily.</p>
+    <p>It also aims to encourage independent learning through examples, visual cards and a short quiz. By connecting theory with practical uses, MathVerse helps students understand why mathematics is important beyond the classroom.</p>
+  </div>
+
+  <h3 class="small-title">Main Objectives of the Project</h3>
+  <div class="grid">
+    <div class="card">
+      <h3>📚 Build Knowledge</h3>
+      <p>Introduce core mathematical topics using concise explanations and familiar examples.</p>
+    </div>
+    <div class="card">
+      <h3>💻 Connect with Technology</h3>
+      <p>Show how mathematical concepts support programming, computer graphics, data analysis and artificial intelligence.</p>
+    </div>
+    <div class="card">
+      <h3>🧩 Encourage Practice</h3>
+      <p>Use formulas and quiz questions to help learners review concepts and check their understanding.</p>
+    </div>
+    <div class="card">
+      <h3>🌱 Support Lifelong Learning</h3>
+      <p>Encourage curiosity, logical reasoning and confidence when approaching unfamiliar problems.</p>
+    </div>
+  </div>
+
+  <h3 class="small-title">Importance of Mathematics</h3>
+  <p>Mathematics is essential because it turns observations into measurable information. It helps scientists analyse experiments, engineers check designs, businesses estimate costs and communities understand statistics. Accurate calculations can reduce mistakes and improve planning.</p>
+  <p>Learning mathematics also develops patience and clear reasoning. When students solve a problem, they identify known values, choose a suitable method, calculate carefully and check whether the result makes sense. This process can be applied to many situations in life.</p>
+</section>
+
+<!-- BRANCHES -->
+<section id="branches">
+  <h2>📘 Major Branches of Mathematics</h2>
+  <p>Mathematics has several branches. Each focuses on a different type of problem, but many branches work together in real applications.</p>
+
+  <div class="grid">
+    <div class="card">
+      <div class="emoji">🔤</div>
+      <h3>Algebra</h3>
+      <p>Algebra uses letters and symbols to represent unknown values and relationships. Equations allow us to find unknown quantities and express general rules.</p>
+      <p><strong>Example:</strong> If x + 5 = 12, subtract 5 from both sides to get x = 7.</p>
+      <p><strong>Uses:</strong> Programming, engineering equations, finance and scientific modelling.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">📐</div>
+      <h3>Geometry</h3>
+      <p>Geometry studies points, lines, angles, shapes, areas and volumes. It helps describe the size and position of objects in two or three dimensions.</p>
+      <p><strong>Example:</strong> The area of a rectangle is its length multiplied by its breadth.</p>
+      <p><strong>Uses:</strong> Architecture, construction, maps, computer graphics and robotics.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">📈</div>
+      <h3>Calculus</h3>
+      <p>Calculus studies change and accumulation. Differentiation measures rates of change, while integration can calculate accumulated quantities such as area.</p>
+      <p><strong>Example:</strong> Derivatives can describe how an object's position changes with time.</p>
+      <p><strong>Uses:</strong> Physics, engineering, optimization and machine learning.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">📊</div>
+      <h3>Statistics</h3>
+      <p>Statistics is the study of collecting, organizing, summarizing and interpreting data. It helps reveal trends and compare groups fairly.</p>
+      <p><strong>Example:</strong> The mean is found by dividing the sum of values by the number of values.</p>
+      <p><strong>Uses:</strong> Research, surveys, quality testing and data science.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">🎲</div>
+      <h3>Probability</h3>
+      <p>Probability measures how likely an event is to happen. Its value ranges from 0 for an impossible event to 1 for a certain event.</p>
+      <p><strong>Example:</strong> For a fair coin, the probability of heads is 1/2.</p>
+      <p><strong>Uses:</strong> Risk analysis, forecasting, games and machine learning.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">📏</div>
+      <h3>Trigonometry</h3>
+      <p>Trigonometry studies relationships between angles and sides of triangles. Sine, cosine and tangent are commonly used ratios.</p>
+      <p><strong>Example:</strong> tan θ = opposite side / adjacent side in a right triangle.</p>
+      <p><strong>Uses:</strong> Navigation, surveying, waves, architecture and graphics.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">🧮</div>
+      <h3>Number Theory</h3>
+      <p>Number theory studies integers and their properties, including factors, multiples and prime numbers.</p>
+      <p><strong>Example:</strong> A prime number has exactly two positive factors: 1 and itself.</p>
+      <p><strong>Uses:</strong> Cryptography and secure digital communication.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">🧊</div>
+      <h3>Linear Algebra</h3>
+      <p>Linear algebra studies vectors, matrices and systems of linear equations. It is especially useful when many values must be handled together.</p>
+      <p><strong>Example:</strong> A matrix can store pixel values in a grayscale image.</p>
+      <p><strong>Uses:</strong> Computer graphics, engineering, data science and machine learning.</p>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section id="applications">
+  <h2>🌐 Applications of Mathematics</h2>
+  <p>Mathematics connects theoretical knowledge with practical tasks. The following examples show how it supports different areas of life and work.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>💻 Computer Science</h3>
+      <p>Logic is used to design program conditions, algebra supports algorithms, and discrete mathematics helps describe networks and data structures. Matrices are used in graphics and many data-processing methods.</p>
+    </div>
+    <div class="card">
+      <h3>🏗️ Civil Engineering</h3>
+      <p>Engineers calculate dimensions, loads, areas and material quantities. Geometry and trigonometry help measure structures, while calculus and numerical methods support complex design analysis.</p>
+    </div>
+    <div class="card">
+      <h3>⚡ Electrical Engineering</h3>
+      <p>Equations describe voltage, current and resistance. Trigonometry and complex numbers help analyse alternating signals, and calculus models how electrical quantities change over time.</p>
+    </div>
+    <div class="card">
+      <h3>🏥 Healthcare</h3>
+      <p>Statistics helps researchers compare treatment results and evaluate studies. Mathematical imaging methods also help process scans, while models can be used to study the spread of diseases.</p>
+    </div>
+    <div class="card">
+      <h3>💰 Banking and Business</h3>
+      <p>Percentages and arithmetic are used for discounts, interest, budgets and taxes. Statistics helps businesses understand sales, estimate demand and make evidence-based decisions.</p>
+    </div>
+    <div class="card">
+      <h3>🚀 Space and Navigation</h3>
+      <p>Geometry, calculus and differential equations help describe motion, estimate trajectories and calculate distances. Trigonometry is useful in surveying and locating objects.</p>
+    </div>
+    <div class="card">
+      <h3>🎮 Games and Animation</h3>
+      <p>Coordinate geometry places objects on a screen. Vectors describe direction and movement, while transformations rotate, resize and translate objects to create animation.</p>
+    </div>
+    <div class="card">
+      <h3>🌦️ Weather and Environment</h3>
+      <p>Statistics and mathematical models help interpret weather observations, estimate trends and study environmental changes. These predictions involve uncertainty and are updated as new data arrives.</p>
+    </div>
+  </div>
+
+  <h3 class="small-title">Mathematics in Everyday Life</h3>
+  <table>
+    <thead>
+      <tr><th>Daily Activity</th><th>Mathematical Concept</th><th>Example</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Shopping</td><td>Percentages and arithmetic</td><td>Calculating a discount and final price</td></tr>
+      <tr><td>Cooking</td><td>Ratios and measurement</td><td>Adjusting ingredients for more people</td></tr>
+      <tr><td>Travel</td><td>Distance, speed and time</td><td>Estimating arrival time</td></tr>
+      <tr><td>Budgeting</td><td>Addition and percentages</td><td>Comparing income with expenses</td></tr>
+      <tr><td>Sports</td><td>Statistics and geometry</td><td>Comparing scores and analysing movement</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- FORMULAS -->
+<section id="formulas">
+  <h2>🧾 Important Mathematical Formulas</h2>
+  <p>Formulas express mathematical relationships in a compact form. To use a formula correctly, identify the known values, substitute them carefully, and include the appropriate units in the final answer.</p>
+
+  <h3 class="small-title">Algebra</h3>
+  <div class="formula">(a + b)² = a² + 2ab + b²</div>
+  <p>This identity expands the square of a sum. For example, (x + 3)² = x² + 6x + 9. It is useful for simplifying expressions and solving equations.</p>
+  <div class="formula">a² − b² = (a − b)(a + b)</div>
+  <p>This is the difference-of-squares identity. It helps factor expressions and simplify algebraic calculations.</p>
+
+  <h3 class="small-title">Geometry</h3>
+  <div class="formula">Rectangle area = length × breadth</div>
+  <div class="formula">Circle area = πr²</div>
+  <div class="formula">Circle circumference = 2πr</div>
+  <div class="formula">Cube volume = a³</div>
+  <p>Here, r is the radius of a circle and a is the side length of a cube. Area is measured in square units, while volume is measured in cubic units.</p>
+
+  <h3 class="small-title">Trigonometry</h3>
+  <div class="formula">sin² θ + cos² θ = 1</div>
+  <div class="formula">tan θ = sin θ / cos θ</div>
+  <p>These identities relate trigonometric ratios. They are used in triangle calculations, periodic motion, navigation and engineering analysis.</p>
+
+  <h3 class="small-title">Calculus</h3>
+  <div class="formula">d/dx (xⁿ) = n xⁿ⁻¹</div>
+  <div class="formula">∫ xⁿ dx = xⁿ⁺¹/(n + 1) + C, n ≠ −1</div>
+  <p>The derivative formula applies to powers of x. The integration formula gives an antiderivative, where C represents an arbitrary constant.</p>
+
+  <h3 class="small-title">Statistics and Probability</h3>
+  <div class="formula">Mean = Sum of all values / Number of values</div>
+  <div class="formula">P(A) = Favourable outcomes / Total equally likely outcomes</div>
+  <p>The mean summarizes a dataset with one central value. The probability formula applies when the outcomes are equally likely.</p>
+
+  <h3 class="small-title">Worked Example</h3>
+  <div class="highlight">
+    <p><strong>Question:</strong> Find the area of a circle with radius 7 cm.</p>
+    <p><strong>Formula:</strong> Area = πr²</p>
+    <p><strong>Substitution:</strong> Area = (22/7) × 7 × 7</p>
+    <p><strong>Answer:</strong> 154 cm².</p>
+    <p>This example shows how selecting the correct formula and substituting the given value produces a clear answer.</p>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz">
+  <h2>🧠 Mathematics Quiz</h2>
+  <p>Test your understanding by choosing one answer for each question. Press “Check Answers” to see your score.</p>
+
+  <div class="quiz">
+    <form id="mathQuiz">
+      <div class="question">
+        <p><strong>1. What is 5²?</strong></p>
+        <label><input type="radio" name="q1" value="a"> 10</label>
+        <label><input type="radio" name="q1" value="b"> 20</label>
+        <label><input type="radio" name="q1" value="c"> 25</label>
+        <label><input type="radio" name="q1" value="d"> 30</label>
+      </div>
+
+      <div class="question">
+        <p><strong>2. Which branch studies rates of change?</strong></p>
+        <label><input type="radio" name="q2" value="a"> Geometry</label>
+        <label><input type="radio" name="q2" value="b"> Calculus</label>
+        <label><input type="radio" name="q2" value="c"> Number theory</label>
+        <label><input type="radio" name="q2" value="d"> Arithmetic only</label>
+      </div>
+
+      <div class="question">
+        <p><strong>3. What is the area of a circle?</strong></p>
+        <label><input type="radio" name="q3" value="a"> 2πr</label>
+        <label><input type="radio" name="q3" value="b"> πr²</label>
+        <label><input type="radio" name="q3" value="c"> 4r</label>
+        <label><input type="radio" name="q3" value="d"> r + r</label>
+      </div>
+
+      <div class="question">
+        <p><strong>4. What is the probability of heads on a fair coin toss?</strong></p>
+        <label><input type="radio" name="q4" value="a"> 0</label>
+        <label><input type="radio" name="q4" value="b"> 1/4</label>
+        <label><input type="radio" name="q4" value="c"> 1/2</label>
+        <label><input type="radio" name="q4" value="d"> 1</label>
+      </div>
+
+      <div class="question">
+        <p><strong>5. Which mathematical object can store image pixel values?</strong></p>
+        <label><input type="radio" name="q5" value="a"> Matrix</label>
+        <label><input type="radio" name="q5" value="b"> Paragraph</label>
+        <label><input type="radio" name="q5" value="c"> Heading</label>
+        <label><input type="radio" name="q5" value="d"> Hyperlink</label>
+      </div>
+
+      <button class="button" type="button" onclick=
